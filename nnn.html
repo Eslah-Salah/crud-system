@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="section">
+      <div class="contanier bg-info p-4 rounded-4 my-5">
+        <h1 class="text-center">CRUDE SYSTEM</h1>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="productName"
+            placeholder=""
+          />
+          <label for="productName">product Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="productprice"
+            placeholder=""
+          />
+          <label for="productprice">product price</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            list="list"
+            class="form-control"
+            id="productcategory"
+            placeholder=""
+          />
+          <label for="productcategory">productcategory</label>
+          <datalist id="list">
+            <option value="tv"></option>
+            <option value="mobile"></option>
+            <option value="screens"></option>
+          </datalist>
+        </div>
+        <div class="form-floating mb-3">
+         <textarea
+         style="height: 100px"
+            class="form-control"
+            id="productdescription"
+            placeholder=""></textarea>
+            
+         
+          <label for="productdescription">productdescription</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input
+              type="file"
+              class="form-control"
+              id="productimge"
+              placeholder=""
+            />
+            <label for="productimge">productimge</label>
+          </div>
+          <div>
+            <button onclick="Addproduct()" class="btn btn-primary btn-sm my-2">Addproduct</button>
+            <button class="btn btn-warning btn-sm my-2">Updateproduct</button>
+
+
+          </div>
+      </div>
+    </div>
+    <div class="section">
+        <div class="container-fluid">
+            <input type="search" class="form-control w-50 mx-auto my-4" placeholder="search by name.....">
+            <div class="row" id="rowdata">
+               
+               
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
